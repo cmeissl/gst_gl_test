@@ -1,0 +1,17 @@
+[package]
+edition = "2021"
+name = "gst_gl_test"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.69"
+gstreamer = "0.20"
+gstreamer-allocators = "0.20"
+gstreamer-app = "0.20"
+gstreamer-gl = "0.20"
+gstreamer-gl-egl = "0.20"
+gstreamer-video = "0.20"
+image = "0.24"
+smithay = {version = "0.3", git = "https://github.com/Smithay/smithay.git", features = ["wayland_frontend", "backend_egl", "use_system_lib"], rev = "fb90bae2497132cd46960d84b7499b8eb10f8fc8"}
